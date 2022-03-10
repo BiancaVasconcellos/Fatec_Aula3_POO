@@ -7,11 +7,11 @@ public class ifSimples {
     public static void main (String []args) {
         JOptionPane.showInputDialog("Digite Algo");
         //variável referência
-        Scanner.leitor
+        Scanner leitor = new Scanner();
         //isso constrói um objeto do tipo Scanner
         //new é semelhante ao malloc da linguagem C
         //temos em funcionamento o Garbage Collector
-        leitor = new Scanner ();
+        leitor = new Scanner();
         double nota;
         System.out.println("Digite a sua nota");
         nota = leitor.nextDouble(); 
@@ -22,4 +22,4 @@ public class ifSimples {
     }
     }
     
-    }
+}

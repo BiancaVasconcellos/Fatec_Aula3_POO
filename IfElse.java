@@ -2,20 +2,18 @@ import java.util.*;
 public class IfElse {
 
     public static void main (String[]args){
-
-        Scanner leitor = new Scanner (System.in);
-        System.out.println("Digite a sua nota\n");
+         Scanner leitor = new Scanner (System.in);
+         System.out.printf("Digite a sua nota\n");
         int nota = leitor.nextInt();
-        If (nota >= 6) {
-            System.out.println("Parabéns!");
-            System.out.println(
-                "A nota %d lhe garante aprovação", 
+        if (nota >= 6){
+            System.out.printf(
+                "A nota %d lhe garante aprovação\n", 
                 nota
             );
         
         }
-        else {
-            System.out.println(
+        else 
+            System.out.printf(
 
             "Com %d você reprova, infelizmente\n",
                nota
@@ -25,4 +23,4 @@ public class IfElse {
         }
     }
     
-}
+
